@@ -1,0 +1,18 @@
+{
+  "name": "bookis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test npm!",
+    "g": "gulp",
+    "go_serv": "dev_appserver.py ~/_Dev/golang/GOPATH/src/github.com/dovneko/bookis/app/app.yaml",
+    "deploy": "gcloud app deploy app/app.yaml",
+    "b": "gcloud app browse"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
