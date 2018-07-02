@@ -19,10 +19,9 @@ func main() {
 func tmplHandler(w http.ResponseWriter, r *http.Request) {
 
 	if r.URL.Path != "/" {
-
 		errorHandler(w, r, http.StatusNotFound)
 		return
-		//
+		/////
 	}
 
 	tpl := template.Must(template.ParseFiles("template/index.html"))
