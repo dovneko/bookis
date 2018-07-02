@@ -1,11 +1,12 @@
 package main
+
 import (
 	"fmt"
 	"html/template"
 	"net/http"
 
-        "google.golang.org/appengine"
-        "google.golang.org/appengine/user"
+	"google.golang.org/appengine"
+	"google.golang.org/appengine/user"
 )
 
 func main() {
@@ -18,6 +19,7 @@ func main() {
 func tmplHandler(w http.ResponseWriter, r *http.Request) {
 
 	if r.URL.Path != "/" {
+
 		errorHandler(w, r, http.StatusNotFound)
 		return
 	}
